@@ -147,12 +147,19 @@ namespace Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
             this.onMessageReceived = (sender, args) =>
             {
                 var message = this.dataSerializer.DeserializeMessage(args.Data);
+                if (EqtTrace.IsVerboseEnabled)
+                {
+                    EqtTrace.Verbose("TestRequestSender.CheckVersionWithTestHost: Received message :{0}", message);
+                }
 
                 if (message.MessageType == MessageType.VersionCheck)
                 {
                     this.protocolVersion = this.dataSerializer.DeserializePayload<int>(message);
 
-                    EqtTrace.Info(@"TestRequestSender: VersionCheck Succeeded, NegotiatedVersion = {0}", this.protocolVersion);
+                    if (EqtTrace.IsInfoEnabled)
+                    {
+                        EqtTrace.Info(@"TestRequestSender: VersionCheck Succeeded, NegotiatedVersion = {0}", this.protocolVersion);
+                    }
                 }
 
                 // TRH can also send TestMessage if tracing is enabled, so log it at runner end
@@ -340,6 +347,11 @@ namespace Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
             try
             {
                 var rawMessage = messageReceived.Data;
+
+                if (EqtTrace.IsVerboseEnabled)
+                {
+                    EqtTrace.Verbose("TestRequestSender.OnExecutionMessageReceived: Received message :{0}", rawMessage);
+                }
 
                 // Send raw message first to unblock handlers waiting to send message to IDEs
                 testRunEventsHandler.HandleRawMessage(rawMessage);
