@@ -171,8 +171,8 @@
   <data name="TestHostExitedWithError" xml:space="preserve">
     <value>Testhost process exited with error: {0}</value>
   </data>
-  <data name="TestRunFailed_NoDiscovererFound_NoTestsAreAvailableInTheSources" xml:space="preserve">
-    <value>No test is available in {0}. Make sure that test discoverer &amp; executors are registered and platform &amp; framework version settings are appropriate and try again.</value>
+  <data name="TestRunFailed_NoDiscovererFound" xml:space="preserve">
+    <value>No test adapters found. Make sure that projects reference test adapters.</value>
   </data>
   <data name="UnsupportedPropertiesInTestCaseFilter" xml:space="preserve">
     <value>No tests matched the filter because it contains one or more properties that are not valid ({0}). Specify filter expression containing valid properties ({1}).</value>
@@ -188,5 +188,8 @@
   </data>
   <data name="OldTestHostIsGettingUsed" xml:space="preserve">
     <value>You are using an older version of Microsoft.NET.Test.Sdk. Kindly move to a version equal or greater than 15.3.0.</value>
+  </data>
+  <data name="TestRunFailed_NoDiscovererFound_NoTestsAreAvailableInTheSources" xml:space="preserve">
+    <value>No test is available in {0}. Make sure that test adapters are referenced and platform &amp; framework version settings are appropriate and try again.</value>
   </data>
 </root>

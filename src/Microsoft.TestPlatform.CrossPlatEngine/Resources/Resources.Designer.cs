@@ -251,7 +251,16 @@ namespace Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No test is available in {0}. Make sure that test discoverer &amp; executors are registered and platform &amp; framework version settings are appropriate and try again..
+        ///   Looks up a localized string similar to No test adapters found. Make sure that projects reference test adapters..
+        /// </summary>
+        internal static string TestRunFailed_NoDiscovererFound {
+            get {
+                return ResourceManager.GetString("TestRunFailed_NoDiscovererFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No test is available in {0}. Make sure that test adapters are referenced and platform &amp; framework version settings are appropriate and try again..
         /// </summary>
         internal static string TestRunFailed_NoDiscovererFound_NoTestsAreAvailableInTheSources {
             get {

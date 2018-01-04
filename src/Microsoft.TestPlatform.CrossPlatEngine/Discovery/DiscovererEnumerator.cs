@@ -232,7 +232,7 @@ namespace Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
                 // No discoverer available, log a warning
                 logger.SendMessage(
                     TestMessageLevel.Warning,
-                    string.Format(CultureInfo.CurrentCulture, CrossPlatEngineResources.TestRunFailed_NoDiscovererFound_NoTestsAreAvailableInTheSources, sourcesString));
+                    string.Format(CultureInfo.CurrentCulture, CrossPlatEngineResources.TestRunFailed_NoDiscovererFound, sourcesString));
 
                 return null;
             }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en" target-language="cs" original="../Resources.resx" build-num="1496413687">
     <header>
@@ -163,9 +163,9 @@
         <note />
       </trans-unit>
       <trans-unit id="TestRunFailed_NoDiscovererFound_NoTestsAreAvailableInTheSources">
-        <source>No test is available in {0}. Make sure that test discoverer &amp; executors are registered and platform &amp; framework version settings are appropriate and try again.</source>
-        <target state="translated">V {0} není k dispozici žádný test. Ověřte, jestli jsou zaregistrované prováděcí moduly testů a nástroj zjišťování testů a jestli je nastavení verze platformy a rozhraní správné. Pak to zkuste znovu.</target>
-        <note />
+        <source>No test is available in {0}. Make sure that test adapters are referenced and platform &amp; framework version settings are appropriate and try again.</source>
+        <target state="new">V {0} není k dispozici žádný test. Ověřte, jestli jsou zaregistrované prováděcí moduly testů a nástroj zjišťování testů a jestli je nastavení verze platformy a rozhraní správné. Pak to zkuste znovu.</target>
+        <note></note>
       </trans-unit>
       <trans-unit id="TesthostDiagLogOutputFile">
         <source>Logging TestHost Diagnostics in file: {0}</source>
@@ -190,6 +190,11 @@
         <source>You are using an older version of Microsoft.NET.Test.Sdk. Kindly move to a version equal or greater than 15.3.0.</source>
         <target state="translated">Používáte starší verzi sady Microsoft.NET.Test.Sdk. Přejděte prosím na verzi 15.3.0 nebo vyšší.</target>
         <note />
+      </trans-unit>
+      <trans-unit id="TestRunFailed_NoDiscovererFound">
+        <source>No test adapters found. Make sure that projects reference test adapters.</source>
+        <target state="new">No test adapters found. Make sure that projects reference test adapters are referenced.</target>
+        <note></note>
       </trans-unit>
     </body>
   </file>

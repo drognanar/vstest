@@ -74,7 +74,7 @@
         <note></note>
       </trans-unit>
       <trans-unit id="TestRunFailed_NoDiscovererFound_NoTestsAreAvailableInTheSources">
-        <source>No test is available in {0}. Make sure that test discoverer &amp; executors are registered and platform &amp; framework version settings are appropriate and try again.</source>
+        <source>No test is available in {0}. Make sure that test adapters are referenced and platform &amp; framework version settings are appropriate and try again.</source>
         <target state="new">No test is available in {0}. Make sure that test discoverer &amp; executors are registered and platform &amp; framework version settings are appropriate and try again.</target>
         <note></note>
       </trans-unit>
@@ -100,6 +100,11 @@
       <trans-unit id="OldTestHostIsGettingUsed">
         <source>You are using an older version of Microsoft.NET.Test.Sdk. Kindly move to a version equal or greater than 15.3.0.</source>
         <target state="new">You are using an older version of Microsoft.NET.Test.Sdk. Kindly move to a version equal or greater than 15.3.0</target>
+        <note></note>
+      </trans-unit>
+      <trans-unit id="TestRunFailed_NoDiscovererFound">
+        <source>No test adapters found. Make sure that projects reference test adapters.</source>
+        <target state="new">No test adapters found. Make sure that projects reference test adapters are referenced.</target>
         <note></note>
       </trans-unit>
     </body>
